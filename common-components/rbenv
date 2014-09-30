@@ -1,4 +1,4 @@
-if [ ! -d "$HOME/.rbenv ]; then
+if [ ! -d "$HOME/.rbenv" ]; then
   fancy_echo "Installing rbenv, to change Ruby versions ..."
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 
@@ -11,13 +11,13 @@ if [ ! -d "$HOME/.rbenv ]; then
     eval "$(rbenv init - zsh)"
 fi
 
-if [ ! -d "$HOME/.rbenv/plugins/rbenv-gem-rehash ]; then
+if [ ! -d "$HOME/.rbenv/plugins/rbenv-gem-rehash" ]; then
   fancy_echo "Installing rbenv-gem-rehash so the shell automatically picks up binaries after installing gems with binaries..."
     git clone https://github.com/sstephenson/rbenv-gem-rehash.git \
       ~/.rbenv/plugins/rbenv-gem-rehash
 fi
 
-if [ ! -d "$HOME/.rbenv/plugins/ruby-build ]; then
+if [ ! -d "$HOME/.rbenv/plugins/ruby-build" ]; then
   fancy_echo "Installing ruby-build, to install Rubies ..."
     git clone https://github.com/sstephenson/ruby-build.git \
       ~/.rbenv/plugins/ruby-build
