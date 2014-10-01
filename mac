@@ -181,7 +181,7 @@ fancy_echo "Upgrading and linking OpenSSL ..."
   brew unlink openssl && brew link openssl --force
 ### end mac-components/compiler-and-libraries
 
-ruby_version="2.1.3"
+ruby_version="2.1.2"
 
 fancy_echo "Installing Ruby $ruby_version ..."
   RUBY_CONFIGURE_OPTS="--without-gcc --disable-install-rdoc" rbenv install "$ruby_version"
