@@ -142,7 +142,7 @@ if [[ ! -d "$HOME/.rbenv/plugins/ruby-build" ]]; then
 fi
 ### end linux-components/rbenv
 
-ruby_version="$(curl -sSL http://ruby.thoughtbot.com/latest)"
+ruby_version="2.1.4"
 
 fancy_echo "Installing Ruby $ruby_version ..."
   rbenv install -s "$ruby_version"
